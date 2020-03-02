@@ -34,8 +34,8 @@ jobs:
           curl --silent --show-error --location --fail --retry 3 --output /tmp/${ndk_version}.zip https://dl.google.com/android/repository/${ndk_version}-linux-x86_64.zip
           sudo unzip -q /tmp/${ndk_version}.zip -d /opt/android
           rm /tmp/${ndk_version}.zip
-          touch local.properties
-          echo "ndk.dir=${ANDROID_NDK_HOME}" > local.properties
+          touch /home/runner/work/ClashForAndroid/ClashForAndroid/local.properties
+          echo "ndk.dir=${ANDROID_NDK_HOME}" >> /home/runner/work/ClashForAndroid/ClashForAndroid/local.properties
       - name: Build with Gradle
         env:
           KEYSTORE_PWD: ${{ secrets.KEYSTORE_PWD }}
