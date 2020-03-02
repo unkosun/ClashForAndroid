@@ -10,7 +10,6 @@ android {
     defaultConfig {
         minSdkVersion gMinSdkVersion
         targetSdkVersion gTargetSdkVersion
-        ndkVersion rootProject.ndkVersion
         versionCode gVersionCode
         versionName gVersionName
 
