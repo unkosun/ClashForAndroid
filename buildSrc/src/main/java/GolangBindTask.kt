@@ -76,8 +76,8 @@ open class GolangBindTask : DefaultTask() {
     @TaskAction
     fun process() {
         environment["GOPATH"] = goPath.absolutePath
-        environment["ANDROID_HOME"] = findAndroidSdkPath().absolutePath
-        environment["ANDROID_NDK_HOME"] = findAndroidNdkPath().absolutePath
+        environment["ANDROID_HOME"] = System.getenv("ANDROID_HOME")
+        environment["ANDROID_NDK_HOME"] = System.getenv("ANDROID_NDK_HOME")
 
         if (Os.isFamily(Os.FAMILY_WINDOWS))
             environment["Path"] = System.getenv("Path") + ";" + goPath.resolve("bin")

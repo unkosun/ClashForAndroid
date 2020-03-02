@@ -20,6 +20,20 @@ jobs:
       - uses: actions/setup-go@v1
         with:
           go-version: '1.14'
+#      - name: install sdkmanager
+#        working-directory: /home/runner
+#          run: |
+#            wget --quiet -O /home/runner/android-sdk.zip https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip
+#            sudo unzip -d $ANDROID_HOME /home/runner/android-sdk.zip > /dev/null
+#            echo "y" | sudo $ANDROID_HOME/tools/bin/sdkmanager 'platforms;android-29'
+      - name: set up NDK
+        env:
+          ndk_version: android-ndk-r21
+          ANDROID_NDK_HOME: /opt/android/${ndk_version}
+        run: |
+          curl --silent --show-error --location --fail --retry 3 --output /tmp/${ndk_version}.zip https://dl.google.com/android/repository/${ndk_version}-linux-x86_64.zip
+          sudo unzip -q /tmp/${ndk_version}.zip -d /opt/android
+          rm /tmp/${ndk_version}.zip
       - name: Build with Gradle
         env:
           KEYSTORE_PWD: ${{ secrets.KEYSTORE_PWD }}

@@ -3,10 +3,10 @@ package bridge
 import (
 	"sync"
 
-	"github.com/Dreamacro/clash/component/mmdb"
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/log"
-	"github.com/Dreamacro/clash/tunnel"
+	"github.com/brobird/clash/component/mmdb"
+	C "github.com/brobird/clash/constant"
+	"github.com/brobird/clash/log"
+	"github.com/brobird/clash/tunnel"
 	"github.com/kr328/cfa/profile"
 )
 

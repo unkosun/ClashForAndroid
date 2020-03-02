@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/Dreamacro/clash/component/resolver"
-	"github.com/Dreamacro/clash/dns"
-	"github.com/Dreamacro/clash/log"
-	"github.com/Dreamacro/clash/proxy/tun"
+	"github.com/brobird/clash/component/resolver"
+	"github.com/brobird/clash/dns"
+	"github.com/brobird/clash/log"
+	"github.com/brobird/clash/proxy/tun"
 )
 
 var tunInstance *tun.TunAdapter

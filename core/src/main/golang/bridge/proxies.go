@@ -3,11 +3,11 @@ package bridge
 import (
 	"sync"
 
-	"github.com/Dreamacro/clash/adapters/outbound"
-	"github.com/Dreamacro/clash/adapters/outboundgroup"
-	"github.com/Dreamacro/clash/adapters/provider"
-	"github.com/Dreamacro/clash/log"
-	"github.com/Dreamacro/clash/tunnel"
+	"github.com/brobird/clash/adapters/outbound"
+	"github.com/brobird/clash/adapters/outboundgroup"
+	"github.com/brobird/clash/adapters/provider"
+	"github.com/brobird/clash/log"
+	"github.com/brobird/clash/tunnel"
 )
 
 type ProxyItem struct {

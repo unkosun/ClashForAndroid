@@ -9,10 +9,10 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/Dreamacro/clash/adapters/inbound"
-	"github.com/Dreamacro/clash/component/socks5"
-	"github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/tunnel"
+	"github.com/brobird/clash/adapters/inbound"
+	"github.com/brobird/clash/component/socks5"
+	"github.com/brobird/clash/constant"
+	"github.com/brobird/clash/tunnel"
 )
 
 var ApplicationVersion = "Unknown"

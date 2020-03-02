@@ -4,7 +4,7 @@ import (
 	"net"
 	"syscall"
 
-	"github.com/Dreamacro/clash/component/dialer"
+	"github.com/brobird/clash/component/dialer"
 	"github.com/kr328/cfa/tun"
 )
 

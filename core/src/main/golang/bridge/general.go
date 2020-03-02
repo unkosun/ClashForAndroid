@@ -1,8 +1,8 @@
 package bridge
 
 import (
-	"github.com/Dreamacro/clash/hub/executor"
-	"github.com/Dreamacro/clash/tunnel"
+	"github.com/brobird/clash/hub/executor"
+	"github.com/brobird/clash/tunnel"
 )
 
 type TunnelGeneral struct {

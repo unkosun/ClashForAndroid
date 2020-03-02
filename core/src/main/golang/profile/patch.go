@@ -3,8 +3,8 @@ package profile
 import (
 	"strings"
 
-	"github.com/Dreamacro/clash/component/fakeip"
-	"github.com/Dreamacro/clash/config"
+	"github.com/brobird/clash/component/fakeip"
+	"github.com/brobird/clash/config"
 )
 
 var (
