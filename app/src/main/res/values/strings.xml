@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PluralsCandidate">
-    <string name="launch_name">Clash</string>
-    <string name="application_name">Clash for Android</string>
+    <string name="launch_name">ClashR</string>
+    <string name="application_name">ClashR for Android</string>
 
     <string name="stopped">Stopped</string>
     <string name="tap_to_start">Tap to start</string>
@@ -69,7 +69,7 @@
 
     <string name="new_profile">New Profile</string>
     <string name="edit_profile">Edit Profile</string>
-    <string name="clash_start_failure">Clash Start Failure</string>
+    <string name="clash_start_failure">ClashR Start Failure</string>
     <string name="refresh">Refresh</string>
     <string name="copied">Copied</string>
 
@@ -91,7 +91,7 @@
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
 
-    <string name="clash_logcat">Clash Logcat</string>
+    <string name="clash_logcat">ClashR Logcat</string>
     <string name="history">History</string>
     <string name="log_viewer">Log Viewer</string>
     <string name="format_export_log_name">%s.log</string>
@@ -109,7 +109,7 @@
 
     <string name="boot">Boot</string>
     <string name="start_on_boot">Start on Boot</string>
-    <string name="start_clash_on_system_boot">Start Clash on system boot</string>
+    <string name="start_clash_on_system_boot">Start ClashR on system boot</string>
 
     <string name="notification">Notification</string>
     <string name="show_traffic">Show Traffic</string>
@@ -128,7 +128,7 @@
     <string name="dns_override">DNS Config Override</string>
     <string name="dns_override_summary">Force use builtin DNS config</string>
     <string name="append_system_dns">Append System DNS</string>
-    <string name="append_system_dns_summary">Auto add system dns to clash</string>
+    <string name="append_system_dns_summary">Auto add system dns to clashR</string>
     <string name="access_control_mode">Access Control Mode</string>
     <string name="access_control_packages">Access Control Packages</string>
     <string name="access_control_packages_summary">Configure access permission for apps</string>
@@ -136,7 +136,7 @@
     <string name="language">Language</string>
     <string name="dark_mode">Dark Mode</string>
 
-    <string name="options_unavailable">Options Unavailable until Clash Stopped</string>
+    <string name="options_unavailable">Options Unavailable until ClashR Stopped</string>
 
     <string name="system_apps">System Apps</string>
     <string name="sort">Sort</string>
@@ -147,10 +147,10 @@
     <string name="search">Search</string>
 
     <string name="sources">Sources</string>
-    <string name="clash">Clash</string>
+    <string name="clash">ClashR</string>
     <string name="clash_for_android">ClashR for Android</string>
-    <string name="clash_url" translatable="false">https://github.com/BROBIRD/clash</string>
-    <string name="clash_for_android_url" translatable="false">https://github.com/BROBIRD/ClashForAndroid</string>
+    <string name="clash_url" translatable="false">https://github.com/Kr328/clash</string>
+    <string name="clash_for_android_url" translatable="false">https://github.com/Kr328/ClashForAndroid/</string>
 
     <string name="contacts">Contacts</string>
     <string name="email">E-Mail</string>
@@ -160,7 +160,7 @@
     <string name="github_issues_url" translatable="false">none</string>
     <string name="telegram_channel_url" translatable="false">none</string>
 
-    <string name="tips_profile"><![CDATA[Accept Only <strong>Clash Config</strong> which contains <br /><strong>Proxies, Proxy Groups and Rules</strong>]]></string>
+    <string name="tips_profile"><![CDATA[Accept Only <strong>ClashR Config</strong> which contains <br /><strong>Proxies, Proxy Groups and Rules</strong>]]></string>
 
     <string name="application_broken_description"><![CDATA[This is usually because you used a copy from <strong>Google Play</strong>, but the app that generated the copy did not handle <strong>Split Apks</strong> correctly <br />This means you get <strong>part of the app</strong>, not all of it]]></string>
     <string name="learn_more_about_split_apks">Learn more about Split Apks</string>

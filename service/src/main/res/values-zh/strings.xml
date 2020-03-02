@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="clash_service_status_channel">Clash 状态</string>
+    <string name="clash_service_status_channel">ClashR 状态</string>
     <string name="profile_service_status_channel">配置服务状态</string>
     <string name="profile_status_channel">配置处理状态</string>
     <string name="running">正在运行</string>
