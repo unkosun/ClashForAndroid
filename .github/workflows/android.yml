@@ -1,0 +1,40 @@
+name: Android CI
+
+on:
+  push:
+    tags: "v*"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update submodules
+        run: git submodule update --init --recursive
+      - name: set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - uses: actions/setup-go@v1
+        with:
+          go-version: '1.14'
+      - name: Build with Gradle
+        env:
+          KEYSTORE_PWD: ${{ secrets.KEYSTORE_PWD }}
+          KEY_PWD: ${{ secrets.KEY_PWD }}
+        run: ./gradlew assembleRelease
+      - name: Prepare APKs
+        run: |
+          mkdir upload
+          cp app/build/outputs/apk/release/*.apk upload
+      - name: Upload Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          files: upload/*.apk
+          draft: false
+          prerelease: false

@@ -14,10 +14,19 @@ android {
         versionCode gVersionCode
         versionName gVersionName
     }
+    signingConfigs{
+        release{
+            storeFile rootProject.file('release.jks')
+            keyAlias "release"
+            storePassword "$System.env.KEYSTORE_PWD"
+            keyPassword "$System.env.KEY_PWD"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
