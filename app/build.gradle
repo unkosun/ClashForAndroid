@@ -8,7 +8,7 @@ android {
     compileSdkVersion gCompileSdkVersion
     buildToolsVersion gBuildToolsVersion
     defaultConfig {
-        applicationId "com.github.kr328.clash"
+        applicationId "com.github.brobird.clashR"
         minSdkVersion gMinSdkVersion
         targetSdkVersion gTargetSdkVersion
         versionCode gVersionCode
