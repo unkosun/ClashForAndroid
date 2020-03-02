@@ -29,13 +29,12 @@ jobs:
       - name: set up NDK
         env:
           ndk_version: android-ndk-r20b
-          ANDROID_NDK_HOME: /opt/android/${ndk_version}
         run: |
           curl --silent --show-error --location --fail --retry 3 --output /tmp/${ndk_version}.zip https://dl.google.com/android/repository/${ndk_version}-linux-x86_64.zip
           sudo unzip -q /tmp/${ndk_version}.zip -d /opt/android
           rm /tmp/${ndk_version}.zip
           touch /home/runner/work/ClashForAndroid/ClashForAndroid/local.properties
-          echo "ndk.dir=${ANDROID_NDK_HOME}" >> /home/runner/work/ClashForAndroid/ClashForAndroid/local.properties
+          echo "ndk.dir=/opt/android/android-ndk-r20b" >> /home/runner/work/ClashForAndroid/ClashForAndroid/local.properties
       - name: Build with Gradle
         env:
           KEYSTORE_PWD: ${{ secrets.KEYSTORE_PWD }}
